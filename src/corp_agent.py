@@ -37,8 +37,6 @@ labor_agent = Agent(
     name="労働者エージェント",
     model="gpt-4o-mini",
     instructions="企業に雇われて働く労働者の立場で、法人エージェントが出した意見を引用したうえで、反論してください。",
-#    instructions="企業に雇われて働く労働者の立場で、法人エージェントが出した意見を引用したうえで、反論してください。",
-#    functions=[transfer_to_corp_agent],
 )
 
 
