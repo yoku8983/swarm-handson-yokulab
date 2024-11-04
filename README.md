@@ -15,6 +15,6 @@ APIキーは`.env` ファイルに記述してください。
 - **倫理エージェント**：倫理的な観点からの見解を提供します。
 - **トリアージエージェント**：経済学エージェントと倫理エージェントの見解を総合し、中立的な判断を行います。
 
-https://github.com/user-attachments/assets/b3b7177e-af76-4f40-8d90-c1eba9ab7783
+https://github.com/user-attachments/assets/41b78fd9-1109-48ca-b029-979b585ccea7
 
 ただし、GPT自体反倫理的な回答はできないので、マルチエージェントの効果や相互作用は実感しづらいかも。
