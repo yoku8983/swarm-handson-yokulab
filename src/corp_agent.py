@@ -23,8 +23,8 @@ triage_agent = Agent(
     name="トリアージエージェント",  # エージェントの名前
     model="gpt-4o-mini", # モデル名
     # エージェントへの指示、役割を記載
-    instructions="ユーザーの提案に対し、法人エージェントと労働者エージェントを使用して、両者の意見を引き出してください。両者の意見を紹介したうえで、どちらの意見が最も適切か示してください",
-    functions=[transfer_to_labor_agent, transfer_to_corp_agent],
+    instructions="ユーザーの提案に対し、法人エージェントと労働者エージェントを使用して、両者の意見を引き出してください。両者の意見を紹介したうえで、より優れた意見を選択してください",
+    functions=[transfer_to_labor_agent,transfer_to_corp_agent],
 )
 
 corp_agent = Agent(
@@ -36,8 +36,9 @@ corp_agent = Agent(
 labor_agent = Agent(
     name="労働者エージェント",
     model="gpt-4o-mini",
-    instructions="企業に雇われて働く労働者の立場で、法人エージェントが出した意見に対して反論してください。",
-    functions=[transfer_to_corp_agent],
+    instructions="企業に雇われて働く労働者の立場で、法人エージェントが出した意見を引用したうえで、反論してください。",
+#    instructions="企業に雇われて働く労働者の立場で、法人エージェントが出した意見を引用したうえで、反論してください。",
+#    functions=[transfer_to_corp_agent],
 )
 
 
